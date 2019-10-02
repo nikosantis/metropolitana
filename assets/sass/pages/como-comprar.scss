@@ -1,0 +1,69 @@
+.como-comprar {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__titulo {
+        text-transform: uppercase;
+        font-size: 1.375rem;
+        font-weight: 600;
+        margin-bottom: 35px;
+    }
+    &__subtitulo {
+        font-size:1.25rem;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+    &__text {
+        font-size: 1.125rem;
+        margin-bottom: 30px;
+    }
+}
+.main-comocomprar {
+    .comocomprar-intro {
+        padding-top: 60px;
+        padding-bottom: 15px;
+        @include MQ(lg) {
+            padding-top: 90px;
+            padding-bottom: 60px;
+        }
+        &__titulo {
+            font-size: 1.375rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        &__text {
+            font-size: 1.125rem;
+            margin-bottom: 30px;
+        }
+    }
+    .comocomprar-link {
+        &:hover .comocomprar-box {
+            color: #ffffff;
+            background-color: $color-mb;
+            border-color: $color-mb;
+        }
+    }
+    .comocomprar-box {
+        height: 150px;
+        &__titulo {
+            margin-bottom: 0;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+    }
+    .comocomprar-subsidio {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        @include MQ(lg) {
+            padding-top: 90px;
+            padding-bottom: 60px;
+        }
+        p {
+            font-size: 1.125rem;
+            margin-bottom: 35px;
+        }
+        ul {
+            font-size: 1rem;
+            margin-bottom: 35px;
+        }
+    }
+}

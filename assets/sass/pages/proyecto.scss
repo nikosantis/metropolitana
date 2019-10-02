@@ -1,0 +1,350 @@
+.proyecto {
+    .hero {
+        position: relative;
+        padding-top: 62px;
+        @include MQ(md) {
+            padding-top: 71px;
+        }
+        @include MQ(lg) {
+            padding-top: 71px;
+        }
+        &-col {
+            padding-right: 0;
+            padding-left: 0;
+            @include MQ(xl) {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+        &-intro {
+            position: relative;
+            background-color: $color-h;
+            &__box {
+                width: 100%;
+                text-align: center;
+                @include MQ(lg) {
+                    text-align: right;
+                    padding-right: 30px;
+                }
+                @include MQ(xl) {
+                    text-align: right;
+                    padding-right: 40px;
+                }
+                &__ds {
+                    color: #cccccc;
+                    font-weight: 500;
+                }
+                &__titulo {
+                    color: #ffffff;
+                    font-size: 1.625rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    @include MQ(lg) {
+                        font-size: 1.5rem;
+                    }
+                    @include MQ(xl) {
+                        font-size: 1.875rem;
+                    }
+                }
+                &__uf {
+                    color: #ffffff;
+                    margin-bottom: 10px;
+                    font-size: 1.375rem;
+                    font-weight: 300;
+                    b {
+                        font-weight: 500;
+                    }
+                }
+                &__comuna {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 1.375rem;
+                    color: #ffffff;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .postintro {
+        &-col {
+            padding-right: 0;
+            padding-left: 0;
+            @include MQ(xl) {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+        &-ubicacion {
+            &__map {
+                height: 100px;
+                padding: 0 20px;
+                background-color: #f5f5f5;
+                text-align: center;
+                color: #373f48;
+                font-weight: 400;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &__direccion {
+                    font-size: 1.25rem;
+                    margin: 0;
+                    @include MQ(sm) {
+                        font-size: 1.5rem;
+                    }
+                    @include MQ(md) {
+                        font-size: 1.5rem;
+                    }
+                    @include MQ(lg) {
+                        font-size: 1.125rem;
+                    }
+                    @include MQ(xl) {
+                        font-size: 1.25rem;
+                    }
+                    svg {
+                        margin-right: 5px;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        &-info {
+        }
+    }
+    .modelos {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        @include MQ(lg) {
+            padding-top: 90px;
+            padding-bottom: 60px;
+        }
+        &-text {
+            font-size: 1.125rem;
+            margin-bottom: 45px;
+        }
+        .planta {
+            position: relative;
+            &-thumb {
+                overflow: hidden;
+            }
+            &-detalle {
+                &__titulo {
+                    font-size: 1.5rem;
+                    margin-bottom: 8px;
+                }
+                &__uf {
+                    font-size: 1.125rem;
+                    margin-bottom: 5px;
+                }
+                &__superficie {
+                    font-size: 1rem;
+                    margin: 0;
+                    color: $color-black;
+                    font-weight: 400;
+                }
+                &__programa {
+                    font-size: 1rem;
+                    margin: 0;
+                }
+                &__terreno {
+                    font-size: 1rem;
+                    margin: 0;
+                }
+            }
+            &-entrega {
+                position: absolute;
+                background-color: $color-m;
+                top: 0;
+                right: 0;
+                color: #ffffff;
+                text-transform: uppercase;
+                padding: 10px 15px;
+                font-weight: 500;
+            }
+            &.planta-agotada {
+                .planta-thumb {
+                    opacity: .8;
+                }
+                .planta-detalle {
+                    opacity: .8;
+                }
+                .planta-entrega {
+                    background-color: $color-h;
+                }
+            }
+        }
+    }
+    .documentacion {
+        background-color: $color-g;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        @include MQ(lg) {
+            padding-top: 90px;
+            padding-bottom: 60px;
+        }
+    }
+    .terminaciones {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        @include MQ(lg) {
+            padding-top: 90px;
+            padding-bottom: 60px;
+        }
+        &-col__l {
+            padding: 0;
+            @include MQ(xl) {
+                margin-top: -50px;
+            }
+        }
+        &-col__r {
+            background-color: $color-h;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            text-align: center;
+            @include MQ(lg) {
+                padding: 75px 60px;
+                text-align: left;
+            }
+        }
+        &-text {
+            li {
+                color: #ffffff;
+                font-size: 1rem;
+                margin-bottom: 5px;
+                font-weight: 300;
+            }
+        }
+    }
+    .galeria {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        @include MQ(lg) {
+            padding-top: 90px;
+            padding-bottom: 90px
+        }
+        &-col {
+            padding: 0;
+        }
+    }
+    .video {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        @include MQ(lg) {
+            padding-top: 90px;
+            padding-bottom: 90px
+        }
+    }
+    .barrio {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        @include MQ(lg) {
+            padding-top: 90px;
+            padding-bottom: 60px;
+        }
+        &-col__l {
+            background-color: $color-g;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            text-align: center;
+            @include MQ(lg) {
+                padding: 75px 60px;
+                text-align: left;
+            }
+        }
+        &-col__r {
+            padding: 0;
+            margin-top: 0;
+            @include MQ(lg) {
+                margin-top: -50px;
+            }
+        }
+        &-text {
+            li {
+                color: #000000;
+                font-size: 0.9375rem;
+                margin-bottom: 5px;
+                font-weight: 300;
+            }
+        }
+    }
+    .ubicacion {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &-col__l {
+            padding: 0;
+        }
+        &-col__r {
+            background-color: $color-h;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            text-align: center;
+            @include MQ(lg) {
+                padding: 75px 60px;
+                text-align: left;
+            }
+        }
+        #map {
+            height: 400px;
+        }
+        &-direccion {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #ffffff;
+            margin-bottom: 30px;
+            @include MQ(md) {
+                font-size: 1.25rem;
+            }
+        }
+        &-text {
+            color: #ffffff;
+            font-size: 0.9375rem;
+            margin-bottom: 5px;
+            font-weight: 300;
+        }
+    }
+    .subsidio {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        background-color: $color-m;
+        margin-bottom: 90px;
+    }
+    .saladeventas {
+        background-color: $color-g;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @include MQ(lg) {
+            padding-top: 90px;
+            padding-bottom: 60px;
+        }
+        &-col__l {
+            margin-bottom: 32px;
+            @include MQ(md) {
+                padding: 32px;
+                margin-bottom: 0;
+            }
+        }
+        &-col__r {
+            margin-bottom: 32px;
+            @include MQ(md) {
+                padding: 32px;
+                margin-bottom: 0;
+            }
+        }
+        &-ul {
+            &__text {
+                font-size: 0.9375rem;
+                margin-bottom: 5px;
+                font-weight: 500;
+                color: $color-h;
+                a {
+                    font-weight: 500;
+                    color: $color-h;
+                    &:hover {
+                        color: $color-black;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

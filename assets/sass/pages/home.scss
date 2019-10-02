@@ -1,0 +1,104 @@
+.home {
+    .hero {
+        position: relative;
+        padding-top: 46px;
+        overflow: hidden;
+        @include MQ(lg) {
+            padding-top: 82px;
+        }
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        &-titulo {
+            padding-left: 0;
+            padding-top: 30px;
+            font-size: 1.625rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            text-align: center;
+            @include MQ(lg) {
+                padding-left: 30px;
+                text-align: left;
+            }
+        }
+        &-subtitulo {
+            padding-left: 0;
+            font-size: 1.375rem;
+            font-weight: 500;
+            margin-bottom: 30px;
+            text-transform: none;
+            text-align: center;
+            @include MQ(lg) {
+                padding-left: 30px;
+                text-align: left;
+            }
+        }
+        &-intro {
+            width: 100%;
+            position: relative;
+            text-align: center;
+            @include MQ(lg) {
+                text-align: left;
+            }
+            &__box {
+                width: 100%;
+                background-color: $color-h;
+                &__titulo {
+                    color: #ffffff;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    .experiencia {
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        &-content {
+            overflow: hidden;
+            &__img {
+                object-fit: cover;
+                height: 1200px;
+                @include MQ(md) {
+                    object-fit: cover;
+                    height: 700px;
+                }
+                @include MQ(lg) {
+                    object-fit: cover;
+                    height: 650px;
+                }
+                @include MQ(xl) {
+                    object-fit: fill;
+                    height: 700px;
+                }
+            }
+        }
+        .container-fluid {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            .row {
+                height: 100%;
+                text-align: center;
+                padding-top: 100px;
+                @include MQ(lg) {
+                    text-align: left;
+                    padding-top: 0;
+                }
+            }
+        }
+        &-img {
+            width: 350px;
+        }
+    }
+    .subsidio {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        background-color: $color-m;
+        margin-bottom: 90px;
+    }
+}
